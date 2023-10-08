@@ -12,6 +12,8 @@ function andor_enqueue_scripts()
 
   wp_enqueue_script('theme-js', get_theme_file_uri('/assets/js/bundle.js'), array(), filemtime(get_theme_file_path('/assets/js/bundle.js')), true);
 
+  wp_enqueue_script('font-awesome-kit', 'https://kit.fontawesome.com/da106994c1.js', array(), '6.0.0');
+
   wp_register_script('custom-vars', '',);
   wp_enqueue_script('custom-vars');
   $data = "

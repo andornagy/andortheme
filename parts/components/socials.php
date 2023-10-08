@@ -8,4 +8,3 @@
     <li>Codepen</li>
   </ul>
 </section>
-</div>

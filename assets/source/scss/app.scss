@@ -2,6 +2,10 @@
 @import 'base';
 @import 'text';
 
+// Layout
+@import 'layout/header';
+@import 'layout/single';
+
 // parts
 @import 'parts/components/about';
 @import 'parts/components/card';

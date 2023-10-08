@@ -51,11 +51,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.95rem;
 }
 
 h4 {
@@ -69,10 +69,6 @@ h5 {
 small,
 .text_small {
   font-size: 0.8rem;
-}
-
-body {
-  font-family: Poppins;
 }
 
 ul {
@@ -430,87 +426,87 @@ img {
 }
 
 .text-blue {
-  color: #1919e6;
+  color: #24252e;
 }
 
 .text-hover-blue:hover {
-  color: #1919e6;
+  color: #24252e;
 }
 
 .bg-blue {
-  background-color: #1919e6;
+  background-color: #24252e;
 }
 
 .text-blue-light-1 {
-  color: #4747eb;
+  color: #3a3c4b;
 }
 
 .text-hover-blue-light-1:hover {
-  color: #4747eb;
+  color: #3a3c4b;
 }
 
 .bg-blue-light-1 {
-  background-color: #4747eb;
+  background-color: #3a3c4b;
 }
 
 .text-blue-light-2 {
-  color: #7575f0;
+  color: #515367;
 }
 
 .text-hover-blue-light-2:hover {
-  color: #7575f0;
+  color: #515367;
 }
 
 .bg-blue-light-2 {
-  background-color: #7575f0;
+  background-color: #515367;
 }
 
 .text-blue-light-3 {
-  color: #a3a3f5;
+  color: #676a84;
 }
 
 .text-hover-blue-light-3:hover {
-  color: #a3a3f5;
+  color: #676a84;
 }
 
 .bg-blue-light-3 {
-  background-color: #a3a3f5;
+  background-color: #676a84;
 }
 
 .text-blue-dark-1 {
-  color: #1414b8;
+  color: #0e0e11;
 }
 
 .text-hover-blue-dark-1:hover {
-  color: #1414b8;
+  color: #0e0e11;
 }
 
 .bg-blue-dark-1 {
-  background-color: #1414b8;
+  background-color: #0e0e11;
 }
 
 .text-blue-dark-2 {
-  color: #0f0f8a;
+  color: black;
 }
 
 .text-hover-blue-dark-2:hover {
-  color: #0f0f8a;
+  color: black;
 }
 
 .bg-blue-dark-2 {
-  background-color: #0f0f8a;
+  background-color: black;
 }
 
 .text-blue-dark-3 {
-  color: #0a0a5c;
+  color: black;
 }
 
 .text-hover-blue-dark-3:hover {
-  color: #0a0a5c;
+  color: black;
 }
 
 .bg-blue-dark-3 {
-  background-color: #0a0a5c;
+  background-color: black;
 }
 
 .text-red {
@@ -1833,6 +1829,10 @@ img {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+}
+
+.content .enlighter-default {
+  margin: 2rem -2rem;
 }
 
 .card {
