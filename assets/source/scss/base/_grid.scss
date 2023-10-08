@@ -1,0 +1,44 @@
+$grid-columns: 12 !default;
+$breakpoints: (
+  'xs': 0,
+  'sm': 480px,
+  'md': 720px,
+  'lg': 960px,
+  'xl': 1200px,
+) !default;
+
+$grid-gaps: (
+  '0': 0,
+  '1': $base-margin,
+  '2': $base-margin * 2,
+  '3': $base-margin * 3,
+);
+
+$max-width: 1200px !default;
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.grid-x {
+  display: grid;
+  grid-template-columns: repeat($grid-columns, 1fr);
+}
+
+@each $key, $val in $grid-gaps {
+  .grid-gap-#{$key} {
+    grid-gap: $val;
+  }
+}
+
+// col classes
+@each $key, $val in $breakpoints {
+  @include breakpoint($key) {
+    @for $i from 1 through $grid-columns {
+      .col-#{$key}-#{$i} {
+        box-sizing: border-box;
+        grid-column: span $i;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@use 'sass:math';
+
+// Theme colors
+$primary: #326dee !default;
+$secondary: #1ac888 !default;
+$error: #d32752 !default;
+$info: #f6c31c !default;
+
+// color palette
+$colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'error': $error,
+  'info': $info,
+  'blue': #1919e6,
+  'red': #e61919,
+  'yellow': #e6e619,
+  'green': #19e635,
+  'orange': #ffa600,
+  'purple': #9900ff,
+  'gray': #808080,
+  'black': black,
+  'white': white,
+) !default;
+
+// number of color variants
+$color-variants: 9 !default;
+
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+  .text-hover-#{$key} {
+    &:hover {
+      color: $val;
+    }
+  }
+  .bg-#{$key} {
+    background-color: $val;
+  }
+
+  @if ($val != black and $val != white) {
+    // light variations
+    @for $i from 1 through $color-variants {
+      .text-#{$key}-light-#{$i} {
+        color: lighten($val, $i * 10);
+      }
+      .text-hover-#{$key}-light-#{$i} {
+        &:hover {
+          color: lighten($val, $i * 10);
+        }
+      }
+      .bg-#{$key}-light-#{$i} {
+        background-color: lighten($val, $i * 10);
+      }
+    }
+
+    // dark variations
+    @for $i from 1 through $color-variants {
+      .text-#{$key}-dark-#{$i} {
+        color: darken($val, $i * 10);
+      }
+      .text-hover-#{$key}-dark-#{$i} {
+        &:hover {
+          color: darken($val, $i * 10);
+        }
+      }
+      .bg-#{$key}-dark-#{$i} {
+        background-color: darken($val, $i * 10);
+      }
+    }
+  }
+}

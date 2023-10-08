@@ -29,6 +29,7 @@
     "@babel/polyfill": "^7.12.1",
     "gsap": "^3.10.4",
     "jquery": "^3.6.0",
+    "sass": "^1.69.0",
     "select2": "^4.1.0-rc.0"
   },
   "babel": {

@@ -10,3 +10,22 @@
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
+
+  <header class="header bg-secondary text-white">
+    <div class="container grid-x grid-gap-1">
+      <section class="header--logo col-sm-12 col-md-2">
+        <?php echo andor_blog_title() ?>
+      </section>
+      <nav class="header--nav col-sm-12 col-md-10">
+        <?php
+        // Main menu
+        wp_nav_menu(array(
+          'theme_location' => 'main-menu',
+          'items_wrap' => '<ul class="menu">%3$s</ul>',
+          'container' => '',
+          'depth' => 3, // 
+        ));
+        ?>
+      </nav>
+    </div>
+  </header>

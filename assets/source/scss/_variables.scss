@@ -1,0 +1,40 @@
+// Theme colors
+$primary: #505b2a;
+$secondary: #ca5254;
+$error: #d32752;
+$info: #f6c31c;
+
+$bg: linear-gradient(176deg, rgb(18, 24, 27) 50%, rgb(32, 39, 55) 100%);
+
+$color-variants: 3;
+
+$max-width: 1200px !default;
+
+$grid-columns: 12;
+
+$breakpoints: (
+  'xs': 0,
+  'sm': 480px,
+  'md': 720px,
+  'lg': 960px,
+  'xl': 1200px,
+  'xxl': 1400px,
+);
+
+// spacing
+$base-padding: 1rem;
+$base-margin: 1rem;
+
+// borders
+$base-border-thickness: 1px !default;
+$base-border-radius: 10px !default;
+
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
+
+// font-sizes
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.5 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;

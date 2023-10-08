@@ -1,1 +1,7 @@
-@import 'modules/text';
+@import 'variables';
+@import 'base';
+@import 'text';
+
+// parts
+@import 'parts/components/about';
+@import 'parts/components/card';
