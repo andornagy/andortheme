@@ -23,7 +23,7 @@
           'theme_location' => 'main-menu',
           'items_wrap' => '<ul class="menu">%3$s</ul>',
           'container' => '',
-          'depth' => 3, // 
+          'depth' => 3,
         ));
         ?>
       </nav>

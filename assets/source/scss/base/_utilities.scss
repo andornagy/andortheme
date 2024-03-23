@@ -11,92 +11,92 @@ $values: (
 
 // Horizontal / vertical padding classes
 @each $key, $val in $values {
-  .ph-#{$key} {
+  .padding-h-#{$key} {
     padding: $val 0;
   }
-  .pv-#{$key} {
+  .padding-v-#{$key} {
     padding: 0 $val;
   }
-  .mh-#{$key} {
+  .margin-h-#{$key} {
     padding: $val 0;
   }
-  .mv-#{$key} {
+  .margin-v-#{$key} {
     padding: 0 $val;
   }
 }
 
 $utilities: (
   'padding': (
-    'prefix': 'p',
+    'prefix': 'padding',
     'values': $values,
   ),
 
   'padding-left': (
-    'prefix': 'pl',
+    'prefix': 'padding-l',
     'values': $values,
   ),
 
   'padding-right': (
-    'prefix': 'pr',
+    'prefix': 'padding-r',
     'values': $values,
   ),
 
   'padding-top': (
-    'prefix': 'pt',
+    'prefix': 'padding-t',
     'values': $values,
   ),
 
   'padding-bottom': (
-    'prefix': 'pb',
+    'prefix': 'padding-b',
     'values': $values,
   ),
   'margin': (
-    'prefix': 'm',
+    'prefix': 'margin',
     'values': $values,
   ),
 
   'margin-left': (
-    'prefix': 'ml',
+    'prefix': 'margin-l',
     'values': $values,
   ),
 
   'margin-right': (
-    'prefix': 'mr',
+    'prefix': 'margin-r',
     'values': $values,
   ),
 
   'margin-top': (
-    'prefix': 'mt',
+    'prefix': 'margin-t',
     'values': $values,
   ),
 
   'margin-bottom': (
-    'prefix': 'mb',
+    'prefix': 'margin-b',
     'values': $values,
   ),
 
-  'border-radius': (
-    'prefix': 'br',
-    'value': (
-      'default': $base-border-radius,
-      'none': 0,
-      'xs': math.div($base-border-radius, 4),
-      'sm': math.div($base-border-radius, 2),
-      'lg': $base-border-radius * 2,
-      'full': 50%,
+  // 'border-radius': (
+  //   'prefix': 'br',
+  //   'value': (
+  //     'default': $base-border-radius,
+  //     'none': 0,
+  //     'xs': math.div($base-border-radius, 4),
+  //     'sm': math.div($base-border-radius, 2),
+  //     'lg': $base-border-radius * 2,
+  //     'full': 50%,
+  //   ),
+  // ),
+  'display':
+    (
+      'prefix': 'display',
+      'values': (
+        'n': none,
+        'b': block,
+        'f': flex,
+        'i': inline,
+        'i-b': inline-block,
+      ),
     ),
-  ),
-
-  'display': (
-    'prefix': 'display',
-    'values': (
-      'n': none,
-      'b': block,
-      'f': flex,
-      'i': inline,
-      'i-b': inline-block,
-    ),
-  ),
 
   'font-size': (
     'prefix': 'font',

@@ -13,7 +13,7 @@ $args = array(
 $loop = new WP_Query($args);
 ?>
 
-<div class="card content-recent-posts col-sm-12 col-md-6 <?php echo $color ?>">
+<div class="card col-sm-12 col-md-6 <?php echo $color ?>">
   <h2><?php echo $title ?></h2>
   <ul>
     <?php

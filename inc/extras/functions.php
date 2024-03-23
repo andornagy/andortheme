@@ -24,8 +24,8 @@ if (!function_exists('andor_blog_title')) {
  * @param int post ID
  * @return html list of post categories
  */
-if (!function_exists('andor_get_post_cats')) {
-  function andor_get_post_tax(string $type = 'category', int $post_id = null)
+if (!function_exists('andor_get_post_taxonomy')) {
+  function andor_get_post_taxonomy(string $type = 'category', int $post_id = null)
   {
 
     $post_id = $post_id ?? get_the_ID();

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Open+Sans:wght@400;700&display=swap');
+
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.8rem; /* 16px */
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --font-ratio: 1.33;
+  --size-300: calc(var(--size-400) / var(--font-ratio));
+  --size-400: 1.6rem; /* 16px */
+  --size-500: calc(var(--size-400) * var(--font-ratio));
+  --size-600: calc(var(--size-500) * var(--font-ratio));
+  --size-700: calc(var(--size-600) * var(--font-ratio));
+  --size-800: calc(var(--size-700) * var(--font-ratio));
+  --size-900: calc(var(--size-800) * var(--font-ratio));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+  font-size: var(--size-400);
+  line-height: 1.6;
+}
+
+label {
+  font-size: var(--size-300);
+}
+
+h1 {
+  font-size: var(--size-900);
+}
+
+h2 {
+  font-size: var(--size-700);
+}
+
+h3 {
+  font-size: var(--size-600);
+}

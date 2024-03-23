@@ -1,0 +1,12 @@
+.animate-header {
+  .line {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1200px) {
+  .animate,
+  .animate-stagger .stagger-item {
+    opacity: 0;
+  }
+}

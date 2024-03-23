@@ -4,14 +4,15 @@
 /* THEME FEATURES */
 /*-------------------------------*/
 
-add_action('after_setup_theme', 'sqe_theme_features');
+add_action('after_setup_theme', 'andor_theme_features');
 
-function sqe_theme_features()
+function andor_theme_features()
 {
   add_theme_support('title-tag');
   add_theme_support('responsive-embeds');
   add_theme_support('post-thumbnails');
   add_theme_support('editor-styles');
+  add_theme_support('custom-background');
 
   register_nav_menus(array(
     'main-menu' => 'Main menu',

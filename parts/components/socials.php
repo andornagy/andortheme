@@ -1,4 +1,4 @@
-<section class="card bg-secondary col-sm-12 col-md-4">
+<section class="card col-sm-12 col-md-4">
   <h2>🚀 Socials</h2>
   <ul>
     <li>Facebook</li>
