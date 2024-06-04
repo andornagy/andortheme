@@ -5,8 +5,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: [
-    path.join(__dirname, 'assets/src', 'js', 'app.js'),
-    path.join(__dirname, 'assets/src', 'scss', 'app.scss'),
+    path.join(__dirname, 'src', 'js', 'app.js'),
+    path.join(__dirname, 'src', 'scss', 'app.scss'),
   ],
   output: {
     path: path.resolve(__dirname, outputPath),

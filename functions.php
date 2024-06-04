@@ -8,3 +8,4 @@ require_once(get_theme_file_path('/inc/helpers.php'));
 require_once(get_theme_file_path('/inc/query.php'));
 require_once(get_theme_file_path('/inc/theme-supports.php'));
 require_once(get_theme_file_path('/inc/extras/functions.php'));
+require_once(get_theme_file_path('/inc/extras/menu-items.php'));

@@ -3,12 +3,10 @@
 @import 'text';
 
 // Layout
-@import 'layout/header';
 @import 'layout/single';
+@import 'layout/header';
+@import 'layout/menu';
 
 // parts
 @import 'parts/components/about';
 @import 'parts/components/card';
-
-// utils
-@import 'utils';

@@ -24,6 +24,8 @@
           'items_wrap' => '<ul class="menu">%3$s</ul>',
           'container' => '',
           'depth' => 3,
+          'walker' => new Andor_Nav_Walker(),
+          'show_carets' => true
         ));
         ?>
       </nav>

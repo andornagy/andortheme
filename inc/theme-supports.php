@@ -20,7 +20,7 @@ function andor_theme_features()
     'footer-menu' => 'Footer menu'
   ));
 
-  //add_image_size('banner', 1600, 900);
-  //add_image_size('landscape', 600, 400, true);
-  //add_image_size('avatar', 256, 256, true);
+  add_image_size('banner', 1600, 900);
+  add_image_size('landscape', 600, 400, true);
+  add_image_size('avatar', 256, 256, true);
 }

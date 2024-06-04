@@ -1,8 +1,10 @@
 <?php get_header() ?>
 
-<section class="container grid-x grid-gap-2 margin-h-1 margin-t-1">
-  <?php get_template_part('parts/components/about') ?>
-  <?php get_template_part('parts/components/socials') ?>
+<section class="section full-width">
+  <div class="container grid-x grid-gap-2 margin-h-1 margin-t-1">
+    <?php get_template_part('parts/components/about') ?>
+    <?php get_template_part('parts/components/socials') ?>
+  </div>
 </section>
 
 <?php get_template_part('parts/home/projects') ?>

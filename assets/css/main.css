@@ -1,10 +1,10 @@
-/*!*****************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/src/scss/app.scss ***!
-  \*****************************************************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
+  \**********************************************************************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Open+Sans:wght@400;700&display=swap);
-/*!*********************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/src/scss/app.scss (1) ***!
-  \*********************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss (1) ***!
+  \**************************************************************************************************************************************************************************************/
 .text-primary {
   color: #505b2a;
 }
@@ -1762,18 +1762,18 @@ img {
 }
 
 html {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 body {
-  font-size: 1.8rem; /* 16px */
+  font-size: 1rem; /* 16px */
   font-family: "Open Sans", sans-serif;
 }
 
 :root {
   --font-ratio: 1.33;
   --size-300: calc(var(--size-400) / var(--font-ratio));
-  --size-400: 1.6rem; /* 16px */
+  --size-400: 1rem; /* 16px */
   --size-500: calc(var(--size-400) * var(--font-ratio));
   --size-600: calc(var(--size-500) * var(--font-ratio));
   --size-700: calc(var(--size-600) * var(--font-ratio));
@@ -1787,58 +1787,64 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-size: var(--size-400);
   line-height: 1.6;
 }
 
 label {
-  font-size: calc(1.6rem / 1.33);
+  font-size: calc(1rem / 1.33);
   font-size: var(--size-300);
 }
 
 h1 {
-  font-size: calc(((((1.6rem * 1.33) * 1.33) * 1.33) * 1.33) * 1.33);
-  font-size: calc(calc(calc(calc(calc(1.6rem * 1.33) * 1.33) * 1.33) * 1.33) * 1.33);
+  font-size: calc(((((1rem * 1.33) * 1.33) * 1.33) * 1.33) * 1.33);
+  font-size: calc(calc(calc(calc(calc(1rem * 1.33) * 1.33) * 1.33) * 1.33) * 1.33);
   font-size: var(--size-900);
 }
 
 h2 {
-  font-size: calc(((1.6rem * 1.33) * 1.33) * 1.33);
-  font-size: calc(calc(calc(1.6rem * 1.33) * 1.33) * 1.33);
+  font-size: calc(((1rem * 1.33) * 1.33) * 1.33);
+  font-size: calc(calc(calc(1rem * 1.33) * 1.33) * 1.33);
   font-size: var(--size-700);
 }
 
 h3 {
-  font-size: calc((1.6rem * 1.33) * 1.33);
-  font-size: calc(calc(1.6rem * 1.33) * 1.33);
+  font-size: calc((1rem * 1.33) * 1.33);
+  font-size: calc(calc(1rem * 1.33) * 1.33);
   font-size: var(--size-600);
-}
-
-.header--nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header--nav ul li {
-  display: inline-block;
-}
-
-.header--nav ul li a {
-  display: inline-block;
-  padding: 13px;
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
 }
 
 .content .enlighter-default {
   margin: 2rem -2rem;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-item-title {
+  display: block;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu-item-desc {
+  display: block;
+  font-size: 1rem;
+  color: #555555;
 }
 
 .card {
@@ -1846,51 +1852,4 @@ h3 {
   -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
           box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   border-radius: 0.5rem;
-}
-
-.animate-header .line {
-  overflow: hidden;
-}
-
-@media (min-width: 1200px) {
-  .animate,
-  .animate-stagger .stagger-item {
-    opacity: 0;
-  }
-}
-body .square-img {
-  position: relative;
-  display: block;
-  padding-top: 100%;
-  overflow: hidden;
-}
-body .square-img img {
-  position: absolute;
-  display: block;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-body .rectangle-img {
-  position: relative;
-  display: block;
-  padding-top: 60%;
-  overflow: hidden;
-}
-body .rectangle-img img {
-  position: absolute;
-  display: block;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
