@@ -12,11 +12,12 @@ $grid-gaps: (
   '1': $base-margin,
   '2': $base-margin * 2,
   '3': $base-margin * 3,
-);
+) !default;
 
 $max-width: 1200px !default;
 .container {
   max-width: $max-width;
+  width: 100%;
   margin: 0 auto;
 }
 

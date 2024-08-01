@@ -1,22 +1,23 @@
 // Theme colors
-$primary: #505b2a;
-$secondary: #ca5254;
+$primary: #ca5254;
+$secondary: #424b23;
 $error: #d32752;
 $info: #f6c31c;
 $white: #ffffff;
+$dark-gray: #212529;
 
-$bg: $white;
+$bg-color: $dark-gray;
 
 $color-variants: 3;
 
-$max-width: 1200px !default;
+$max-width: 1200px;
 
 // font-sizes
-$base-font-size: 1rem !default;
-$font-size-sm: $base-font-size * 0.75 !default;
-$font-size-lg: $base-font-size * 1.5 !default;
-$font-size-xl: $base-font-size * 2 !default;
-$font-size-xxl: $base-font-size * 3 !default;
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
 
 $grid-columns: 12;
 
@@ -33,9 +34,16 @@ $breakpoints: (
 $base-padding: 1rem;
 $base-margin: 1rem;
 
+$grid-gaps: (
+  '0': 0,
+  '1': $base-margin,
+  '2': $base-margin * 2,
+  '3': $base-margin * 3,
+);
+
 // borders
-$base-border-thickness: 1px !default;
-$base-border-radius: 0.5rem !default;
+$base-border-thickness: 1px;
+$base-border-radius: 0.5rem;
 
 // box-shadow
-$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);

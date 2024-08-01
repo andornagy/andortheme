@@ -3,9 +3,12 @@
 html {
   font-size: 16px;
 }
+
+$bodyFont: 'Open Sans', sans-serif !default;
+
 body {
   font-size: 1rem; /* 16px */
-  font-family: 'Open Sans', sans-serif;
+  font-family: $bodyFont;
 }
 
 :root {
@@ -19,14 +22,16 @@ body {
   --size-900: calc(var(--size-800) * var(--font-ratio));
 }
 
+$headingFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: $headingFont;
 }
 
 p {

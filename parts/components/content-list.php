@@ -1,7 +1,7 @@
 <?php
 
 $title      = isset($args['title']) ? $args['title'] : 'Recent Posts';
-$color      = isset($args['color']) ? 'bg-' . $args['color'] : 'bg-primary';
+$color      = isset($args['color']) ? 'bg-' . $args['color'] : 'bg-secondary';
 
 $post_type  = isset($args['post_type']) ? $args['post_type'] : 'post';
 $limit      = isset($args['limit']) ? $args['limit'] : 5;
@@ -13,8 +13,8 @@ $args = array(
 $loop = new WP_Query($args);
 ?>
 
-<div class="card col-sm-12 col-md-6 <?php echo $color ?>">
-  <h2><?php echo $title ?></h2>
+<div class="card col-sm-12 col-md-6 <?php echo $color ?> stagger-item">
+  <h3><?php echo $title ?></h3>
   <ul>
     <?php
     while ($loop->have_posts()) {

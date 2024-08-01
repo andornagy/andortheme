@@ -13,10 +13,10 @@
 
   <header class="header bg-secondary text-white">
     <div class="container grid-x grid-gap-1">
-      <section class="header--logo col-sm-12 col-md-2">
+      <section class="col-sm-12 col-md-2">
         <?php echo andor_blog_title() ?>
       </section>
-      <nav class="header--nav col-sm-12 col-md-10">
+      <nav class="nav col-sm-12 col-md-10">
         <?php
         // Main menu
         wp_nav_menu(array(
