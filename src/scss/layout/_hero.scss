@@ -13,6 +13,14 @@
     object-fit: cover;
   }
 
+  &--small {
+    margin-block: 5rem;
+  }
+
+  &--medium {
+    height: 40vh;
+  }
+
   &--large {
     height: 90vh;
   }

@@ -1930,6 +1930,13 @@ h3 {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.hero--small {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.hero--medium {
+  height: 40vh;
+}
 .hero--large {
   height: 90vh;
 }
@@ -1938,8 +1945,16 @@ h3 {
           filter: brightness(0.5);
 }
 
+.project__preview {
+  margin-top: -12rem;
+}
+.project__preview img {
+  width: 100%;
+  height: auto;
+}
+
 .card {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .card__image {
   aspect-ratio: 9/6 auto;

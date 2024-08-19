@@ -27,5 +27,5 @@ function andor_enqueue_scripts()
 
   wp_add_inline_script('custom-vars', $data);
 
-  wp_dequeue_style('global-styles');
+  // wp_dequeue_style('global-styles');
 }

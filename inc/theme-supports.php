@@ -13,6 +13,7 @@ function andor_theme_features()
   add_theme_support('post-thumbnails');
   add_theme_support('editor-styles');
   add_theme_support('custom-background');
+  add_theme_support('wp-block-styles');
 
   register_nav_menus(array(
     'main-menu' => 'Main menu',

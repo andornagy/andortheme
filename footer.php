@@ -1,8 +1,6 @@
-<footer class="footer">
-  <section class="container grid-x grid-gap-1">
-    <div class=" col-sm-12 ">
-      <p>Copyright &copy; 2022 - Andor Nagy</p>
-    </div>
+<footer class="footer margin-t-2 bg-blue">
+  <section class="container padding-v-3">
+    <p>Copyright &copy; 2022 - Andor Nagy</p>
   </section>
 </footer>
 

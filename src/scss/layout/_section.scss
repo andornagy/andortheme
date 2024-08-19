@@ -1,10 +1,10 @@
 .section {
   padding-left: $base-padding;
   padding-right: $base-padding;
+  margin-bottom: $base-margin;
   &--full-width {
     width: 100%;
   }
-  margin-bottom: $base-margin;
 
   &__header {
     display: flex;

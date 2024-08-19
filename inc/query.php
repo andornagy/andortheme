@@ -544,3 +544,64 @@ function getBarristersByShowOnArchive()
 
   return $filteredcats;
 }
+
+
+function ignore_sticky_posts_in_main_query($query)
+{
+  // Check if the query is the main query and is on the front end
+  if ($query->is_main_query() && !is_admin()) {
+    // Ignore sticky posts
+    $query->set('ignore_sticky_posts', true);
+  }
+}
+add_action('pre_get_posts', 'ignore_sticky_posts_in_main_query');
+
+function unstick_all_posts()
+{
+  // Get all sticky posts
+  $sticky_posts = get_option('sticky_posts');
+
+  // Check if there are any sticky posts
+  if (!empty($sticky_posts)) {
+    // Remove sticky status from each post
+    foreach ($sticky_posts as $post_id) {
+      unstick_post($post_id);
+    }
+
+    // Update the option in the database to remove sticky posts
+    update_option('sticky_posts', array());
+  }
+}
+
+// Hook the function to run when WordPress initializes
+add_action('init', 'unstick_all_posts');
+
+function hide_sticky_option_in_post_editor()
+{
+  global $pagenow;
+
+  // Check if we are on post.php or post-new.php
+  if ('post.php' === $pagenow || 'post-new.php' === $pagenow) {
+?>
+    <style type="text/css">
+      /* Hide the sticky option in the Gutenberg editor */
+      .editor-post-sticky__toggle-control {
+        display: none !important;
+      }
+
+      /* Hide the sticky option in the classic editor */
+      #sticky-span {
+        display: none !important;
+      }
+
+      /* Hide the sticky option in the quick edit */
+      .inline-edit-col .inline-edit-group .inline-edit-status .inline-edit-sticky {
+        display: none !important;
+      }
+    </style>
+<?php
+  }
+}
+
+// Hook the function to admin_head to ensure the CSS is output in the admin area head
+add_action('admin_head', 'hide_sticky_option_in_post_editor');

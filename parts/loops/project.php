@@ -13,6 +13,5 @@ $animate_class = !isset($args['animate']) || $args['animate'] ? 'stagger-item' :
       <?php the_post_thumbnail('medium') ?>
     </div>
   <?php } ?>
-  <h3 class="card__title"><?php echo get_the_title($id) ?></h3>
-  <a class="btn btn-readMore" href="<?php the_permalink() ?>">View Project</a>
+  <h3 class="card__title"><a href="<?php echo get_the_permalink($id) ?>"><?php echo get_the_title($id) ?></a></h3>
 </div>
